@@ -1,12 +1,10 @@
 console.log("Hello World!!!");
-document.write("Hello World!!!<br>")
 //
 const yourName = prompt("Enter your name")
 // const yourName = "Pavlo"
 
 //
 console.log(`Hello ${yourName}`);
-document.write(`Hello ${yourName}<br>`)
 //
 function factorializer(num) {
     if (num < 0)
@@ -19,7 +17,6 @@ function factorializer(num) {
 }
 
 console.log("Your name has " + yourName.length + " letters; " + yourName.length + "! = " + factorializer(yourName.length));
-document.write("Your name has " + yourName.length + " letters; " + yourName.length + "! = " + factorializer(yourName.length) + "<br>")
 // 
 let today = new Date();
 let dd = String(today.getDate()).padStart(2, '0');
@@ -34,5 +31,4 @@ const diffTime = Math.abs(now - birthday);
 const diffYears = Math.floor(diffTime / (1000 * 60 * 60 * 24 * 356));
 const diffDays = Math.floor(diffTime / (1000 * 60 * 60 * 24));
 console.log(`Today is ${today}, you are ${diffYears} years (${diffDays} days) old.`);
-document.write(`Today is ${today}, you are ${diffYears} years (${diffDays} days) old. <br>`);
 //
